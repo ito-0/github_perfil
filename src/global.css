@@ -57,6 +57,10 @@ button:hover {
     transform: scale(1.05);
 }
 
+.githubIconWrapper {
+    color: var(--corTransparent);
+}
+
 :root {
     --corPrincipal1: #a95acf;
     --corPrincipal2: #6fd45f;
