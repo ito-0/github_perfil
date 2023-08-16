@@ -3,17 +3,64 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
 }
 
 .container {
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
+    text-align: center;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin: 4px 0;
+}
+
+input[type="text"] {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px var(--corTransparent);
+    font-size: 20px;
+    background: linear-gradient(45deg, var(--corPrincipal1), var(--corPrincipal2));
+    text-align: center;
+    flex: 1;
+}
+
+button {
+    background: linear-gradient(45deg, var(--corPrincipal2), var(--corPrincipal1));
+    color: var(--corSecundaria);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--corPrincipal1);
+    transform: scale(1.05);
 }
 
 :root {
     --corPrincipal1: #a95acf;
     --corPrincipal2: #6fd45f;
     --corSecundaria: #222;
+    --corError: red;
     --corTransparent: rgba(0, 0, 0, 0.2);
 }
